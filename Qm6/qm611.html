@@ -2,72 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Joelexis Enterprise(Renault Qm6)</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <meta charset="utf-8">
+  <title>Joelexis Enterprise (Renault QM6)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link href="qm6favicon.png" rel="icon">
+  <!-- Favicon -->
+  <link href="qm6favicon.png" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Rubik&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="qm6.css" rel="stylesheet">
-    </head>
-	
-	<body>
-       
-        <a href="Qm61.jpg">
-            <img id="image" src="Qm61.jpg" alt="car" height="500" width="200">
-          </a>
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        
+    h1 {
+      margin-top: 30px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5rem;
+      color: #333;
+    }
 
-          <a href="Qm63.jpg">
-            <img id="image" src="Qm63.jpg" alt="car" height="500" width="200">
-          </a>
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+    }
 
-         
+    .image-gallery a {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      transition: all 0.3s ease;
+    }
 
-          <a href="Qm64.jpg">
-            <img id="image" src="Qm64.jpg" alt="car" height="500" width="200">
-          </a>
+    .image-gallery a:hover {
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+      transform: translateY(-6px);
+    }
 
-          
+    .image-gallery a img {
+      border-radius: 10px;
+      height: 300px;
+      width: 220px;
+      object-fit: cover;
+      border: 3px solid #eaeaea;
+      transition: transform 0.3s ease;
+    }
 
-          <a href="Qm66.jpg">
-            <img id="image" src="Qm66.jpg" alt="car" height="500" width="200">
-          </a>
+    .image-gallery a img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
 
+<body>
 
+  <h1 data-aos="fade-down">Renault QM6 Gallery</h1>
 
+  <div class="image-gallery">
 
+    <a href="Qm61.jpg"
+       data-lightbox="qm6"
+       data-title="Renault QM6 – Bold front profile"
+       data-aos="fade-right"
+       data-aos-delay="100">
+      <img src="Qm61.jpg" alt="QM6 1">
+    </a>
 
+    <a href="Qm63.jpg"
+       data-lightbox="qm6"
+       data-title="QM6 – Side styling in motion"
+       data-aos="fade-up"
+       data-aos-delay="200">
+      <img src="Qm63.jpg" alt="QM6 2">
+    </a>
 
+    <a href="Qm64.jpg"
+       data-lightbox="qm6"
+       data-title="QM6 – Sleek and modern exterior"
+       data-aos="fade-left"
+       data-aos-delay="300">
+      <img src="Qm64.jpg" alt="QM6 3">
+    </a>
 
+    <a href="Qm66.jpg"
+       data-lightbox="qm6"
+       data-title="QM6 – Rear perspective view"
+       data-aos="zoom-in"
+       data-aos-delay="400">
+      <img src="Qm66.jpg" alt="QM6 4">
+    </a>
 
+  </div>
 
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
 
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
+</body>
 
-
-
-
-
-
-        </body>
-        </html>
+	</html>
